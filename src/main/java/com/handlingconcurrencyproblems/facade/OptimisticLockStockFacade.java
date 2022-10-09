@@ -2,10 +2,11 @@ package com.handlingconcurrencyproblems.facade;
 
 import com.handlingconcurrencyproblems.service.OptimisticLockStockService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
-@Service
+@Component
 public class OptimisticLockStockFacade {
 
     private final OptimisticLockStockService optimisticLockStockService;
